@@ -6,11 +6,13 @@ React (React.js або ReactJS) — JavaScript-бібліотека з відк�
 # ????? #
 Найпростіша функція написана за допомогою React
 
-  function HelloMessage({ name }) {
-    return <div>Hello {name}</div>;
-  }
+```jsx
+function HelloMessage({ name }) {
+  return <div>Hello {name}</div>;
+}
 
-  ReactDOM.render(
-    <HelloMessage name="Taylor" />,
-    document.getElementById('container')
-  );
+ReactDOM.render(
+  <HelloMessage name="Taylor" />,
+  document.getElementById('container')
+);
+```
