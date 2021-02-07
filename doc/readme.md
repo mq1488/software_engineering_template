@@ -23,9 +23,9 @@ ReactDOM.render(
 Проще кажучи -це готовий код для спрощення життя програмісту
 
 Найбільш популярні розновидності API:
-*Remote Procedure Call – RPC
-*Simple Object Access Protocol – SOAP
-*Representational State Transfer – REST
+* Remote Procedure Call – RPC
+* Simple Object Access Protocol – SOAP
+* Representational State Transfer – REST
 
 
 
