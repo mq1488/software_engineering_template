@@ -34,7 +34,7 @@ ReactDOM.render(
 
 # Початок роботи с React.js #
 Для початку роботи нам потрібно інсталювати Node.js. Це можливо виконати з офіційного сайту, [клік](https://nodejs.org/uk/). Після інсталювання нам потрібно запустити
-![](https://postimg.cc/YvFVT89q)
+[![image1.png](https://i.postimg.cc/sgHrQNCS/image1.png)](https://postimg.cc/YvFVT89q)
 
 
 
