@@ -40,7 +40,39 @@ http://localhost:3000/
 # Структура проекту #
 Давайте розберемо структру проекту 
 
-[![image.png](https://i.postimg.cc/Wbx8dQHH/image.png)](https://postimg.cc/9rtZSNVd)
+[![image.png](https://i.postimg.cc/J4710vWL/image.png)](https://postimg.cc/hhwF3Cjy)
+
+Public:
+
+index.htlm - файл який відображає на сайті JSX скрпіт, написанний в App.js
+
+manifest.json
+
+robots.txt
+
+Src:
+
+App.css - зберігає стилізацію. створеною завдяки CSS(Cascading Style Sheets)
+
+App.js - основний файл проекту, в якому ми створюємо наш сайт
+
+App.test.js -це набір допоміжних функцій, що дозволяє тестувати React-компоненти не покладаючись на їх внутрішню реалізацію(не уверен)
+
+index.css -
+
+index.js -
+
+reportWebVitals.js -
+
+setupTests.js -
+
+.gitignore -  потрібен для приховування файлів і папок від VCS(системи контролю версій)
+
+package.json - зберігає список пакетів, необхідних для проекту з потрібними версіями
+
+package-lock.json - потрібен для перевірки того, що ставив пакет не був підмінений або іншим чином недійсний.
+
+README.md - файл який містить інформіцію для почтку роботи с React.js
 
 
 
