@@ -38,8 +38,9 @@ http://localhost:3000/
 Чутка теорії, npm(Node Packege Manager) - Він використовується для скачування пакетів з хмарного сервера npm, або для завантаження пакетів на ці сервера.
 
 # Структура проекту #
-Давайте розберемо структру проекту
- [![image.png](https://i.postimg.cc/Wbx8dQHH/image.png)](https://postimg.cc/9rtZSNVd)
+Давайте розберемо структру проекту 
+
+[![image.png](https://i.postimg.cc/Wbx8dQHH/image.png)](https://postimg.cc/9rtZSNVd)
 
 
 
