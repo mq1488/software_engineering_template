@@ -59,7 +59,7 @@ http://localhost:3000/
 
 *index.css* -
 
-*index.js* -
+*index.js* - обробляє компонети отрмані від *App.js*
 
 *reportWebVitals.js* -
 
