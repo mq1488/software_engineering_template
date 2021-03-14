@@ -76,6 +76,22 @@ http://localhost:3000/
 README.md - файл який містить інформіцію для почтку роботи с React.js
 
 
+# Почнемо створювати наш сайт #
+Роботу надо сайтом ми почнемо з файлу App.js. Першим кроком потрібно створити class в якому ми будемо працювати.
+```class App extends React.Component ``` Наступним кроком потрібно створиити конструктор(props) та занести в нього необхідну нам інофрмацію
+```    constructor(props) {
+        super(props);
+        this.state = {
+            wikiSearchReturnValues: [],
+            wikiSearchTerms: '',
+            wikiSearchLanguage:''
+        }
+    }
+
+
+
+
+
 
 
 
