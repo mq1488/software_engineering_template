@@ -276,7 +276,7 @@ export default Footer;
             );
         }
 ```
-Залишилось викликати наш NavBar та Footer 
+Викликаємо наш NavBar та Footer 
 ```jsx
 return (
             <div>
