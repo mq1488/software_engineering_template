@@ -246,3 +246,66 @@ export default Footer;
         });
     }
 ```
+Лишилось обробити отриману інформацію та передати її в
+красивий оболонці.
+```jsx
+    render() {
+        let wikiSearchResults = [];
+        // console.log(this.state.wikiSearchReturnValues);
+
+        for (var key3 in this.state.wikiSearchReturnValues) {
+            wikiSearchResults.push(
+                <div className="searchResultDiv" key={key3}>
+
+
+                    <Card>
+                        <Card.Body>
+                            <Card.Title>
+                                <h3><a target="_blank"
+                                       href={this.state.wikiSearchReturnValues[key3].queryResultPageFullURL}>{this.state.wikiSearchReturnValues[key3].queryResultPageTitle}</a>
+                                </h3>
+                            </Card.Title>
+                            <Card.Text>
+                                <p className="description"
+                                   dangerouslySetInnerHTML={{__html: this.state.wikiSearchReturnValues[key3].queryResultPageSnippet}}></p>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+
+                </div>
+            );
+        }
+```
+Залишилось викликати наш NavBar та Footer 
+```jsx
+return (
+            <div>
+                <NaviBar/>
+                <Form.Row className="align-items-center" style={{padding: '10px', top: '20x'}}>
+
+                    <Col xs={2}>
+                        <Form.Control autocomplete='on' type="text" value={this.state.WikiSearchTerms || ''}
+                                      onChange={this.changeWikiSearchTerms} placeholder='Search Wikipedia Articles'/>
+                    </Col>
+
+                    <Col xs={'auto'}>
+                        <Button variant="primary" type="submit" onClick={this.useWikiSearchEngine}> Submit </Button>
+                    </Col>
+                </Form.Row>
+
+                {wikiSearchResults}
+
+                <Footer/>
+
+            </div>
+
+        );
+    }
+}
+
+```
+В кінці не забуваємо експортувати
+```jsx
+export default App;
+
+```

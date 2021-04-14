@@ -14,8 +14,6 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 // import {About} from './About.js';
 
 
-
-
 class App extends React.Component {
 
     constructor(props) {
@@ -23,7 +21,7 @@ class App extends React.Component {
         this.state = {
             wikiSearchReturnValues: [],
             wikiSearchTerms: '',
-            wikiSearchLanguage:''
+            wikiSearchLanguage: ''
         }
     }
 
@@ -111,49 +109,45 @@ class App extends React.Component {
                 <div className="searchResultDiv" key={key3}>
 
 
-                <Card>
-                    <Card.Body>
-                        <Card.Title>
-                            <h3><a href={this.state.wikiSearchReturnValues[key3].queryResultPageFullURL}>{this.state.wikiSearchReturnValues[key3].queryResultPageTitle}</a></h3>
-                        </Card.Title>
-                        <Card.Text>
-                            <p className="description" dangerouslySetInnerHTML={{__html: this.state.wikiSearchReturnValues[key3].queryResultPageSnippet}}></p>
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
+                    <Card>
+                        <Card.Body>
+                            <Card.Title>
+                                <h3><a target="_blank"
+                                       href={this.state.wikiSearchReturnValues[key3].queryResultPageFullURL}>{this.state.wikiSearchReturnValues[key3].queryResultPageTitle}</a>
+                                </h3>
+                            </Card.Title>
+                            <Card.Text>
+                                <p className="description"
+                                   dangerouslySetInnerHTML={{__html: this.state.wikiSearchReturnValues[key3].queryResultPageSnippet}}></p>
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
 
                 </div>
-
-
-
-
-        );
+            );
         }
 
         console.log(wikiSearchResults);
-        localStorage.setItem('input',this.state.wikiSearchTerms)
+        localStorage.setItem('input', this.state.wikiSearchTerms)
 
         return (
+            <div>
+                <NaviBar/>
+                <Form.Row className="align-items-center" style={{padding: '10px', top: '20x'}}>
 
+                    <Col xs={2}>
+                        <Form.Control autocomplete='on' type="text" value={this.state.WikiSearchTerms || ''}
+                                      onChange={this.changeWikiSearchTerms} placeholder='Search Wikipedia Articles'/>
+                    </Col>
 
-
-            <div >
-            <NaviBar />
-                <Form.Row className="align-items-center" style={{ padding: '10px',top:'20x'}}>
-
-                <Col xs={2}>
-                    <Form.Control type="text" value={this.state.WikiSearchTerms || ''} onChange={this.changeWikiSearchTerms} placeholder='Search Wikipedia Articles' />
-                </Col>
-
-
-                <Col xs={'auto'}>
-                    <Button variant="primary"   type="submit" onClick={this.useWikiSearchEngine}> Submit </Button>
-                </Col>
+                    <Col xs={'auto'}>
+                        <Button variant="primary" type="submit" onClick={this.useWikiSearchEngine}> Submit </Button>
+                    </Col>
                 </Form.Row>
 
                 {wikiSearchResults}
 
-            <Footer />
+                <Footer/>
 
             </div>
 
