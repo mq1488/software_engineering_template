@@ -56,7 +56,7 @@ class App extends React.Component {
             )
             .then(
                 function (response) {
-                    // console.log(response);
+                    console.log(response);
 
                     for (var key in response.query.search) {
                         pointerToThis.state.wikiSearchReturnValues.push({
@@ -71,7 +71,7 @@ class App extends React.Component {
             .then(
                 function (response) {
                     for (var key2 in pointerToThis.state.wikiSearchReturnValues) {
-                        // console.log(pointerToThis.state.wikiSearchReturnValues);
+                        console.log(pointerToThis.state.wikiSearchReturnValues);
                         let page = pointerToThis.state.wikiSearchReturnValues[key2];
                         let pageID = page.queryResultPageID;
                         let urlForRetrievingPageURLByPageID = `https://en.wikipedia.org/w/api.php?origin=*&action=query&prop=info&pageids=${pageID}&inprop=url&format=json`;
@@ -102,7 +102,7 @@ class App extends React.Component {
 
     render() {
         let wikiSearchResults = [];
-        // console.log(this.state.wikiSearchReturnValues);
+        console.log(this.state.wikiSearchReturnValues);
 
         for (var key3 in this.state.wikiSearchReturnValues) {
             wikiSearchResults.push(

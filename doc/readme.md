@@ -307,5 +307,8 @@ return (
 В кінці не забуваємо експортувати
 ```jsx
 export default App;
-
 ```
+
+# Тестування #
+Скріншот роботи сервісу
+[![2021-04-14-102201.png](https://i.postimg.cc/WbRZ96LY/2021-04-14-102201.png)](https://postimg.cc/5j3jyzt8)
