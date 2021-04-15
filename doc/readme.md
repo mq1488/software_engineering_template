@@ -44,9 +44,6 @@ http://localhost:3000/
 
 *index.htlm* - файл який відображає на сайті JSX скрпіт, написанний в App.js
 
-*manifest.json*
-
-*robots.txt*
 
 # Src:
 
@@ -56,13 +53,8 @@ http://localhost:3000/
 
 *App.test.js* -це набір допоміжних функцій, що дозволяє тестувати React-компоненти не покладаючись на їх внутрішню реалізацію(не уверен)
 
-*index.css* -
-
 *index.js* - обробляє компонети отрмані від *App.js*
 
-*reportWebVitals.js* -
-
-*setupTests.js* -
 
 # Others:
 
@@ -312,3 +304,11 @@ export default App;
 # Тестування #
 Скріншот роботи сервісу
 [![2021-04-14-102201.png](https://i.postimg.cc/WbRZ96LY/2021-04-14-102201.png)](https://postimg.cc/5j3jyzt8)
+
+# Посилання #
+[GitHub](https://github.com/mq1488/software_engineering_template).
+Коноплін Ілля | студент НТУУ "КПІ", ФІОТ | ilia.konoplin@gmail.com
+
+квітень 2021
+
+
